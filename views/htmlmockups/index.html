@@ -1,0 +1,116 @@
+<!-- create html sections for mock up -->
+<!-- each on of these mocks is to be used in handle bars to make the pages. -->
+
+<!-- create comments div -->
+
+<div class="comments">
+      <div class="card">
+          <h3 class="card-header"></h3>
+          <section class="comment card-body">
+              <div class="text">
+                  <p>placeholder text</p>
+              </div>
+              <div class="meta">
+                  <p>place holder information for the user and comments</p>
+              </div>
+          </section>
+      </div>
+</div>
+<!-- create dashboard tiles for information on posts -->
+<div class="card">
+    <div class="card-header">
+        <h4><a class="link" href=mock>dashboard info</a></h4>
+    </div>
+</div>
+
+<!-- posts for cards of user name and date created -->
+<div class="card">
+    <div class="card-header">
+       <h4><a class="link" href=apicall>This is a test post</a></h4>
+        <p>Posted by dg on 13/11/22 </p>
+    </div>
+        <p class="card-body">Blah blah blah</p>
+</div>
+
+<!-- user to edit the post -->
+<div class="card">
+    <h3 class="card-header">Edit Post</h3>
+    <form class="card-body edit-post-form">
+        <label for="post-title" class="form-label">Title</label>
+        <input name="post-title" type="text" value="posttitle" class="form-input" />
+        <label class="form-label" for="content">Content</label>
+        <input name="content" type="text" value="content of post" class="form-input" />
+        <button type="submit" class="btn">Update Post</button>
+        <button type="button" class="delete-post-btn btn">Delete Post</button>
+    </form>
+</div>
+<!-- will then need the js to edit post or js to delete post -->
+
+<!-- login page -->
+
+<div class="card">
+    <h3 class="card-header">Login</h3>
+    <form id="login-form" class="card-body">
+      <label class="form-label" for="username-login">Username</label>
+      <input  id="username-login" type="text" autofocus="true" class="form-input" />
+
+      <label class="form-label" for="password-login">Password</label>
+      <input id="password-login" type="password" autofocus="true" class="form-input" />
+
+      <button type="submit" class="btn">Login!</button>
+      <a class="login-link" href="signup form">Sign up instead</a> 
+    </form>
+  </div>
+  <!-- run js login script -->
+  <!-- create signup page to navigate to upon clicking signup -->
+
+  <!-- new post -->
+  <div class="card">
+    <h3 class="card-header">Create New Post</h3>
+    <form class="card-body new-post-form" id="new-post-form">
+        <label for="post-title" class="form-label">Title</label>
+        <input type="text" id="post-title" name="post-title" class="form-input" />
+
+
+        <label class="form-label" for="content">Content</label>
+        <input id="content" name="content" class="form-input" />
+
+        <button type="submit" class="btn">Create</button>
+    </form>
+</div>
+
+<!-- run js script for post new post -->
+
+<!-- signup tmeplate -->
+<div class="card">
+    <h3 class="card-header">Sign Up</h3>
+    <form id="signup-form" class="card-body">
+      <label for="username-signup" class="form-label">Username</label>
+      <input id="username-signup" type="text" class="form-input" />
+
+
+      <label class="form-label" for="password-signup">Password</label>
+      <input  id="password-signup" type="password" class="form-input" />
+
+      <button type="submit" class="btn">Signup!</button>
+      <a class="login-link" href=loginpage>Log in instead</a>
+    </form>
+  </div>
+
+<!-- run signup script  -->
+
+
+<!-- single post -->
+<!-- if the user is loggedIn -->
+<div class="card">
+    <h3 class="card-header"></h3>
+    <form class="card-body comment-form" id="comment-form">
+
+        <label class="form-label">Comment</label>
+        <input id="comment" name="comment-body" class="form-input" />
+
+        <button type="submit" class="btn">Submit</button>
+    </form>
+</div>
+
+<!-- then run the comment js script -->
